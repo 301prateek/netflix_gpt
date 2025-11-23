@@ -2,6 +2,8 @@
 - Vite React App
 - Configured tailwind
 - Configured React Router
+- Login form
+- Sign up form
 # Features
 - Login/Sign up
   - Sign in/ Sign up Form
