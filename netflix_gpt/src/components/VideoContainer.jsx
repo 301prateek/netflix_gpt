@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { READ_ACCESS_TMDB_KEY } from "../utils/constants";
 
 const VideoContainer = ({ mainMovie }) => {
+  const apiKey6 = import.meta.env.VITE_READ_ACCESS_TMDB_KEY;
   const [trailerId, setTrailerId] = useState(null);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const VideoContainer = ({ mainMovie }) => {
           {
             headers: {
               accept: "application/json",
-              Authorization: `Bearer ${READ_ACCESS_TMDB_KEY}`,
+              Authorization: `Bearer ${apiKey6}`,
             },
           }
         );
