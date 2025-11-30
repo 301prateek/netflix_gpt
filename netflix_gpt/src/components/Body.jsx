@@ -1,13 +1,13 @@
 import React from "react";
 import Login from "./Login";
 import Browse from "./Browse";
-import { createBrowserRouter, Router, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SignUp from "./SignUp";
 
 const Body = () => {
   const AppRouter = createBrowserRouter([
     {
-      path: "/login",
+      path: "/",
       element: <Login />,
     },
     {
@@ -19,8 +19,9 @@ const Body = () => {
       element: <SignUp />,
     },
   ]);
+
   return (
-    <div className="text-3xl font-bold underline">
+    <div className="text-3xl bg-black text-white">
       <RouterProvider router={AppRouter}>
         <Login />
         <Browse />
